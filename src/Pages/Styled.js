@@ -178,3 +178,40 @@ export const TextHighlight = styled.span`
     text-decoration: underline;
     color: green;
 `
+
+export const RegisterPageTermsBox = styled.div`
+    margin: 3vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+
+export const RegisterTermsLine1 = styled.div`
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+`
+
+export const RegisterTermsLine2 = styled.div`
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+`
+
+export const RegisterPageLoginLink = styled.a`
+    margin: 4vh 0 0 0;
+    padding: 0;
+    display: flex;
+    width: 180px;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    cursor: pointer;
+`
