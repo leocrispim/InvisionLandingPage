@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components';
+import { Variables } from './Variables';
 
 export const GlobalStyle = createGlobalStyle`
     body{
@@ -16,24 +17,29 @@ export const MainArea = styled.div`
 
 export const CarouselArea = styled.div`
     grid-column: 1;
-    background-color: #A9C5BA;
-    width: 76%;
-    padding: 10% 12% 0% 12%;
+    background-color: ${Variables.PrimaryColor};
+    width: 75%;
+    padding: 14% 12.5% 0% 12.5%;
 `
 
 export const SlideDiv = styled.div`
-    background-color: #A9C5BA;
+    background-color: ${Variables.PrimaryColor};
+    padding-bottom: 10%;
 `
 
 export const TextBoxTitle = styled.p`
-    margin: 0;
+    margin: 1vh 0 2vh 0;
+    font-size: ${Variables.SecondaryMedium};
+    font-family: ${Variables.PrimaryFont};
+    color: ${Variables.TertiaryColor};
     padding: 0;
-    color: grey;
 `
 
 export const TextBoxDescription = styled.span`
     margin: 0;
-    padding: 0;
+    font-size: ${Variables.PrimaryBig};
+    font-family: ${Variables.PrimaryFont};
+    color: ${Variables.TertiaryColor};
 `
 
 export const UserArea = styled.div`
@@ -50,6 +56,8 @@ export const TitleCard = styled.p`
     margin: 6% 8% 0 0;
     display: flex;
     align-self: flex-end;
+    font-family: ${Variables.TertiaryFont};
+    font-size: ${Variables.SecondaryBig};
 `
 
 export const LoginDiv = styled.div`
@@ -60,6 +68,7 @@ export const LoginDiv = styled.div`
 
 export const WelcomeText = styled.h3`
     margin: 8vh 0 0 0;
+    color: ${Variables.SecondaryColor};
     text-align: center;
 `
 
@@ -71,7 +80,9 @@ export const FormBox = styled.form`
 
 export const FormBoxLabel = styled.p`
     margin: 0;
-    color: grey;
+    color: ${Variables.SecondaryColor};
+    font-size: ${Variables.PrimarySmall};
+    font-family: ${Variables.PrimaryFont};
 `
 
 export const FormBoxInput = styled.input`
@@ -81,16 +92,18 @@ export const FormBoxInput = styled.input`
     border-width: 0 0 1px;
     text-indent: 14px;
     margin-bottom: 0.62vh;
-    :focus:invalid {border: 2px solid red};
+    :focus:invalid {border: 2px solid ${Variables.Error};}
+    font-family: ${Variables.PrimaryFont};
 `
 
 export const FormBoxForgotButton = styled.button`
     margin: 1vh 0 0 0;
     padding: 0;
-    color: white;
+    color: ${Variables.SecondaryColor};
+    font-size: ${Variables.PrimarySmall};
     outline: none;
     border-width: 0px;
-    background-color: grey;
+    background-color: ${Variables.TertiaryColor};
     align-self: flex-end;
 `
 
@@ -99,11 +112,13 @@ export const FormSignInButton = styled.button`
     padding: 0;
     height: 35px;
     width: 140px;
-    background-color: grey;
+    background-color: ${Variables.SecondaryColor};
     border-radius: 100px;
     border: none;
     outline: none;
+    color: ${Variables.TertiaryColor};
     align-self: center;
+    font-family: ${Variables.PrimaryFont};
 `
 
 export const DividerBox = styled.div`
@@ -117,11 +132,14 @@ export const DividerBox = styled.div`
 
 export const DividerText = styled.span`
     margin: 0;
+    color: ${Variables.SecondaryColor};
+    font-family: ${Variables.PrimaryFont};
 `
 
 export const FormDivider = styled.hr`
     display: inline-block;
     width: 100px;
+    border-color: ${Variables.SecondaryColor};
     border-width: 0 0 0.5px;
 `
 
@@ -130,6 +148,7 @@ export const GoogleLogin = styled.button`
     border-radius: 100px;
     border: none;
     outline: none;
+    background-color: ${Variables.TertiaryColor};
     box-shadow: 0px 3px 6px #00000029;
     align-self: center;
     width: 230px;
@@ -147,6 +166,9 @@ export const GoogleLoginImage = styled.img`
 export const GoogleLoginText = styled.span`
     margin: 0;
     padding: 0;
+    font-family: ${Variables.SecondaryFont};
+    font-weight: ${Variables.SecondaryWeight};
+    font-size: ${Variables.PrimaryBig};
 `
 
 export const CreateAccountLink = styled.a`
@@ -163,20 +185,23 @@ export const CreateAccountLink = styled.a`
 export const TextGrey = styled.span`
     margin: 0;
     padding: 0;
-    color: grey;
+    color: ${Variables.SecondaryColor};
+    font-size: ${Variables.PrimarySmall};
 `
 
 export const TextBold = styled.span`
     margin: 0;
     padding: 0;
-    font-weight: bold;
+    font-size: ${Variables.PrimarySmall};
+    font-weight: ${Variables.SecondaryWeight};
 `
 
 export const TextHighlight = styled.span`
     margin: 0;
     padding: 0;
     text-decoration: underline;
-    color: green;
+    color: ${Variables.PrimaryColor};
+    font-size: ${Variables.PrimaryMedium};
 `
 
 export const RegisterPageTermsBox = styled.div`
