@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import * as SC from './Pages/Styled';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import FirstSlide from "./Images/FirstSlide.png";
+import { GlobalStyle } from './Pages/Styled';
 import LandingPage from './Pages/LandingPage';
 import RegisterPage from './Pages/RegisterPage';
 
@@ -41,6 +42,8 @@ class App extends React.Component {
     }
 
     return (
+      <>
+        <GlobalStyle />
         <SC.MainArea>
           <SC.CarouselArea>
             <Carousel
@@ -48,7 +51,7 @@ class App extends React.Component {
             showThumbs={false}
             infiniteLoop={true}
             autoPlay={true}
-            interval={500}
+            interval={4000}
             showStatus={false}
             dynamicHeight={true}
             >
@@ -87,8 +90,10 @@ class App extends React.Component {
           </SC.CarouselArea>
           {currentPage}
         </SC.MainArea>
+      </>
     )
   }
+
 }
 
 export default App;

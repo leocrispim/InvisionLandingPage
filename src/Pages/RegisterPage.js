@@ -29,6 +29,7 @@ class RegisterPage extends Component {
               <SC.FormBoxLabel>Password</SC.FormBoxLabel>
               <SC.FormBoxInput
                 name="password"
+                pattern="^\w{6,18}$"
                 type="password"
                 required
               >
