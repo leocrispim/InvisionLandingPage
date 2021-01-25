@@ -13,6 +13,11 @@ export const MainArea = styled.div`
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 768px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 `
 
 export const CarouselArea = styled.div`
@@ -20,6 +25,39 @@ export const CarouselArea = styled.div`
     background-color: ${Variables.PrimaryColor};
     width: 75%;
     padding: 14% 12.5% 0% 12.5%;
+
+    /*Media Queries tested on:
+    Laptop
+    Galaxy S5
+    iPhone 5/SE
+    iPad (Both Rotations)
+    */
+
+    @media (max-width: 1024px){
+        width: 512px;
+        padding: 25% 0 0 0;
+    }
+
+    @media (max-width: 768px){
+        width: 100%;
+        padding: 20% 0 0 0;
+    }
+
+    @media (max-width: 640px){
+        width: 100%;
+        padding: 0% 0 0 0;
+    }
+
+    @media (max-width: 360px){
+        padding: 20% 0 0 0;
+        height: 70vh;
+        width: 100vw;
+    }
+
+    @media (max-width: 320px){
+        padding: 10% 0 0 0;
+        height: 50vh;
+    }
 `
 
 export const SlideDiv = styled.div`
@@ -50,6 +88,34 @@ export const UserArea = styled.div`
     align-items: center;
     align-content: stretch;
     flex-wrap: nowrap;
+
+    @media (max-width: 768px){
+        grid-column: 1;
+        grid-row: 2;
+        height: 80vh;
+    }
+
+    @media (max-width: 640px){
+        height: 120vh;
+    }
+
+    @media (max-width: 411px){
+        padding: 10% 0 0 0;
+        height: 70vh;
+    }
+
+    @media (max-width: 375px){
+        padding: 0% 0 0 0;
+    }
+
+    @media (max-width: 360px){
+        padding: 10% 0 0 0;
+        height: 100vh;
+    }
+
+    @media (max-width: 320px){
+        height: 90vh;
+    }
 `
 
 export const TitleCard = styled.p`
