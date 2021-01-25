@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import * as SC from './Styled';
+import GoogleLogo from "../Images/GoogleLogo.svg";
 
 class LandingPage extends Component {
   render() {
     return (
-       <div>Test</div>
+        <SC.UserArea>
+            <h3>Invision</h3>
+        </SC.UserArea>
     );
   }
 
