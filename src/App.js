@@ -12,17 +12,32 @@ class App extends React.Component {
     this.state = {
       renderingPage: 'LandingPage',
     }
+    this.handleSwitchPage = this.handleSwitchPage.bind(this)
+  }
+
+  handleSwitchPage(){
+    if(this.state.renderingPage === 'LandingPage'){
+      this.setState({
+        renderingPage: 'RegisterPage'
+      })
+    }
+
+    else{
+      this.setState({
+        renderingPage: 'LandingPage'
+      })
+    }
   }
 
   render() {
     let currentPage
 
     if (this.state.renderingPage === 'LandingPage') {
-      currentPage = <LandingPage/>
+      currentPage = <LandingPage handleSwitchPage = {this.handleSwitchPage}/>
     }
 
     else {
-      currentPage = <RegisterPage/>
+      currentPage = <RegisterPage handleSwitchPage = {this.handleSwitchPage}/>
     }
 
     return (
