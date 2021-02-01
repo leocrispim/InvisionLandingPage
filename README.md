@@ -30,7 +30,7 @@ Quando o usuário visita esta plataforma ele deve ver primeiro a página de logi
 
 A rede social terá 4 páginas:
 
-Tela de entrada (sign-in): <br>
+# Tela de entrada (sign-in): <br>
 <br>
 ● Do lado esquerdo da página, você pode ver o slider com as imagens, que devem ser alternadas automaticamente e abaixo deste o usuário deve poder alternar as imagens clicando nos botões de navegação. <br>
 ● O usuário deve ser capaz de entrar um nome de usuário e também uma senha. <br>
@@ -40,7 +40,7 @@ Tela de entrada (sign-in): <br>
 ● Colocar o botão Sign-in com Google. <br>
 ● Se o usuário ainda não tem uma conta, ele deve ser capaz de navegar para a tela de registro (sign-up) clicando o link “Novo no Invision? Crie uma conta”. <br>
 <br>
-Página de Registro (Sign-up): <br>
+# Página de Registro (Sign-up): <br>
 <br>
 ● Do lado esquerdo da página de sign-up, você pode ver o slider com as imagens, que devem ser alternadas automaticamente e abaixo deste o usuário deve poder alternar as imagens clicando nos botões de navegação. <br>
 ● Todos os campos devem ser preenchidos e não podem ser deixados em branco. <br>
