@@ -28,7 +28,7 @@ O objetivo deste desafio é criar o front-end (estatico) de uma aplicação Web.
 Para que o usuário consiga utilizar nossa plataforma ele deve ser capaz de registrar-se nela, e se já tiver uma conta ativa, ele deve ser capaz de fazer login.
 Quando o usuário visita esta plataforma ele deve ver primeiro a página de login.
 
-A rede social terá 4 páginas:
+O projeto terá apenas duas paginas:
 
 ### Tela de entrada (sign-in): <br>
 <br>
